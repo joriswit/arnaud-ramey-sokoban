@@ -1,0 +1,12 @@
+/*!
+* \file SOKOBAN_PATH.h.in
+* A CMake generated file for compiling otions
+* \date 11/2014
+* \author Arnaud Ramey
+*/
+#ifndef SOKOBAN_PATH_H
+#define SOKOBAN_PATH_H
+
+#define SOKOBAN_PATH       "@PROJECT_SOURCE_DIR@/"
+
+#endif /* SOKOBAN_PATH_H */

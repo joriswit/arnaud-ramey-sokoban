@@ -1,0 +1,24 @@
+________________________________________________________________________________
+
+Dependencies
+________________________________________________________________________________
+The program is written in C++.
+It does not require any other lib.
+It uses the CImg image library, embedded in the source folder (nothing to install).
+
+________________________________________________________________________________
+
+How to build the program
+________________________________________________________________________________
+The project is based on a CMakeLists.
+It compile without problems on Linux, not tested on Windows.
+If there is a compilation problem, mail us !
+
+Steps :
+$ mkdir build
+$ cd    build
+$ cmake ..
+$ make
+
+For Windows users, some instructions are available on OpenCV website:
+http://opencv.willowgarage.com/wiki/Getting_started .
