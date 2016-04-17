@@ -1,5 +1,6 @@
 project(sokoban)
 cmake_minimum_required(VERSION 2.8)
+include(GenerateExportHeader)
 # Debug, Release, RelWithDebInfo and MinSizeRe
 set(CMAKE_BUILD_TYPE RelWithDebInfo)
 SET(CMAKE_VERBOSE_MAKEFILE ON)
@@ -26,3 +27,12 @@ add_executable(test_sokoban test.cpp)
 target_link_libraries(test_sokoban sokoban)
 add_executable(test_sokoban_img test_img.cpp GUI.cpp)
 target_link_libraries(test_sokoban_img sokoban ${OpenCV_LIBS} ${X11_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+
+if(WIN32)
+  add_library(arnaud-ramey-sokoban SHARED
+    Plugin.cpp
+    arnaud-ramey-sokoban.def
+  )
+  target_link_libraries(arnaud-ramey-sokoban sokoban)
+  generate_export_header(arnaud-ramey-sokoban)
+endif()

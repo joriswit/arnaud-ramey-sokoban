@@ -1,0 +1,7 @@
+LIBRARY arnaud-ramey-sokoban
+EXPORTS
+   SolveEx
+   GetConstraints
+   GetPluginName
+   Configure
+   ShowAbout
