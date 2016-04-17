@@ -6,6 +6,7 @@
  */
 
 #include "SituationTree.h"
+#include <algorithm>
 
 /*!
  * constructor

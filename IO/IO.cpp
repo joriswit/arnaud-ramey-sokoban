@@ -7,6 +7,7 @@
 
 #include "IO.h"
 #include "client.cpp"
+#include <algorithm>
 
 /*!
  * read a file and transform it into a situation
