@@ -327,6 +327,7 @@ string Solver::solve_and_convert_to_string(bool* was_solution_found) {
 	cout << "Solving OK" << endl;
 
 	if (is_sol_found == false) {
+		*was_solution_found = is_sol_found;
 		cout << "No solution found, ending" << endl;
 		return "";
 	}
@@ -371,6 +372,7 @@ string Solver::solve_and_convert_to_string(bool* was_solution_found) {
 	delete s1;
 	delete sol_path;
 
+	*was_solution_found = is_sol_found;
 	return answer.str();
 }
 
